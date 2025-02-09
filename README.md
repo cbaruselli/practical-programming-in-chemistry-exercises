@@ -25,8 +25,8 @@ Navigate to the relevant week to access the exercises.
 | 08 | Data Acquisition and Cleaning, Web APIs |  |
 | 09 | More packaging; project templates, code testing and coverage. |  |
 | 10 | Visualization and analysis of chemical data (clustering) |  |
-| 11 | Streamlit | Week 11 |
-| 12 |  | Week 12 |
+| 11 | Streamlit |  |
+| 12 |  |  |
 
 We are currently updating last year's course. So, there might be upcoming changes in the schedule.
 
