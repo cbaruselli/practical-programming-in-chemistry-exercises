@@ -66,23 +66,6 @@ git config --global user.email "user@epfl.ch" # Replace with the associated emai
 git config --global --list
 ```
 
-### 3. Personal Access Token (PAT)
-⚠️ This is crucial for connecting to GitHub from your computer!
-
-1. Go to the GitHub website and click on your profile in the upper right corner and then `⚙️ Settings`
-2. Scroll to the end of the option bar on the left and click on `<> Developer settings` > `🔑 Personal access tokens` > `Tokens (classic)`
-3. Next, in the upper right, click on `Generate new token` and choose the classic version.
-4. Set token name (e.g., "Python-Course-Access").
-5. Select scopes:
-   - `repo`
-   - `workflow`
-   - `write:packages`
-   - `delete:packages`
-   ![PAT](../assets/PAT.png)
-6. Generate token
-7. ⚠️ **IMPORTANT**: Copy and save your token somewhere safe! You'll need it when Git asks for your password. It will start with `ghp_` followed by a bunch of numbers and letters.
-
-
 ## Terminal Commands Overview
 
 Here are the essential terminal commands you'll need for navigating your computer and working with files:
@@ -132,13 +115,26 @@ Here are the essential terminal commands you'll need for navigating your compute
 6. Remove the `temp` directory and its contents
 7. Verify the files still exist in `backup`
 
-### Exercise 4: Working with Paths
-1. From your home directory, create a directory structure in a single command:
-   ```bash
-   mkdir -p python-course/assignments/week1
-   ```
-2. Without changing directories, create a file in the week1 directory
-3. List the contents of week1 from your current location
+### Exercise 4: Play the bashcrawl game (optional)
+This is a fun way to learn a lot more bash commands, play as long as you want (we don't expect you to finish it).
+
+You can either download the game locally or play it through Binder online.
+
+**Local game**
+1. Open [https://gitlab.com/slackermedia/bashcrawl](https://gitlab.com/slackermedia/bashcrawl).
+2. Click on `Code`.
+3. Download source code as `zip`
+4. Unzip it. 
+5. In your terminal/Git bash using `cd`, navigate to the folder `bashcrawl-master`
+6. cd `entrance`
+7. `cat scroll` to read the instructions
+
+**Through Binder (online)**
+1. Open [https://mybinder.org/v2/gl/nthiery%2Fbashcrawl/HEAD](https://mybinder.org/v2/gl/nthiery%2Fbashcrawl/HEAD).
+2. Wait for a minute or two
+3. Once the interface has loaded, click on Terminal (bottom left)
+4. Run `cat scroll` to read the instructions
+
 
 ## Common Issues and Solutions
 
