@@ -121,13 +121,11 @@ This is a fun way to learn a lot more bash commands, play as long as you want (w
 You can either download the game locally or play it through Binder online.
 
 **Local game**
-1. Open [https://gitlab.com/slackermedia/bashcrawl](https://gitlab.com/slackermedia/bashcrawl).
-2. Click on `Code`.
-3. Download source code as `zip`
-4. Unzip it. 
-5. In your terminal/Git bash using `cd`, navigate to the folder `bashcrawl-master`
-6. cd `entrance`
-7. `cat scroll` to read the instructions
+1. Download [BashCrawl game](https://gitlab.com/slackermedia/bashcrawl/-/archive/stable-2024.02.09/bashcrawl-stable-2024.02.09.zip).
+2. Unzip it. 
+3. In your terminal/Git bash using `cd`, navigate to the folder `bashcrawl-stable-2024.02.09`
+4. cd `entrance`
+5. `cat scroll` to read the instructions
 
 **Through Binder (online)**
 1. Open [https://mybinder.org/v2/gl/nthiery%2Fbashcrawl/HEAD](https://mybinder.org/v2/gl/nthiery%2Fbashcrawl/HEAD).
