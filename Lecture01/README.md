@@ -13,6 +13,7 @@ This lecture focuses on setting up the essential tools you'll need throughout th
 - **macOS Users**: Use the built-in Terminal
   1. Press `Cmd + Space`, type "Terminal", and press Enter
   2. Update your command line tools by running: `xcode-select --install`
+  3. Check that Git is installed by typing `git --version` in your terminal.
 
 ### 2. Visual Studio Code
 1. Download VS Code from the [official website](https://code.visualstudio.com/)
@@ -54,7 +55,18 @@ More about VS Code extensions from the [official documentation](https://code.vis
 8. (Optional) The GitHub Student Developer Pack is a free offer from GitHub specially for students. It provides access to a variety of premium development tools and services free of charge for as long as you’re a student. [GitHub Student Developer Pack](https://education.github.com/pack)
 </details>
 
-### 2. Personal Access Token (PAT)
+### 2. Configure GitHub locally (on your computer)
+1. Configure your username and email address by typing the following commands in your terminal/Git Bash:
+```bash
+git config --global user.name "Your Name" # Replace with your GitHub username
+git config --global user.email "user@epfl.ch" # Replace with the associated email address
+```
+2. Check that your configuration was successful by typing (leave file by pressing `q`):
+```bash
+git config --global --list
+```
+
+### 3. Personal Access Token (PAT)
 ⚠️ This is crucial for connecting to GitHub from your computer!
 
 1. Go to the GitHub website and click on your profile in the upper right corner and then `⚙️ Settings`
