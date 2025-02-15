@@ -70,8 +70,8 @@ git config --global --list
 
 Here are the essential terminal commands you'll need for navigating your computer and working with files:
 
-| Function | macOS/Linux Command/Windows Git Bash 
-|----------|------------------------|------------------|
+| Function | macOS/Linux Command/Windows Git Bash |
+|----------|------------------------|
 | Navigate to home directory | `cd ~` | 
 | Change directory | `cd directoryName` | 
 | Go up one folder | `cd ..` | 
