@@ -1,18 +1,18 @@
 # Lecture 02: Setting up GitHub and creating first repositories
 
-## GitHub
+## What is GitHub?
 
 GitHub is a web-based platform that allows you to store and manage your code. It is widely used by developers and data scientists to collaborate on projects and share their work with others. In this course, we will be using GitHub to store and share our code, both for the exercises as well as the final assignment. Below, you can see how a local environment (laptop) interacts with the remote environment (GitHub browser) by first downloading (`clone`) a code-based project (`repository`) and then updating the remote version with changes done locally on your computer (arrows going up) or updating the local version with changes being done by colleagues (arrows going down).
 
 ![Git Workflow](../assets/git_workflow.jpeg)
-*Scheme explaining the Git Workflow taken from [this blogpost](https://medium.com/@itsmepankaj/git-workflow-add-commit-push-pull-69adf44cf812), which has more detailed information on it.*
+
+*Figure: Scheme explaining the Git Workflow taken from [this blogpost](https://medium.com/@itsmepankaj/git-workflow-add-commit-push-pull-69adf44cf812), which has more detailed information on it.*
 
 This Git workflow ensures that changes are tracked, saved, and shared in a structured way, preventing data loss and enabling collaboration. Staging (`add`) selects changes, committing (`commit`) saves them with a message, and pushing (`push`) syncs them with a remote repository for others to access.
 
 Now, you will create your first repository, a profile README that will appear on your user page. 
 
-
-### 1. Create a Profile README
+## 1. Create a Profile README
 A profile README is a special repository that is automatically displayed on your GitHub profile. It is a great way to introduce yourself and showcase your work. Take your time to create such a README on the GitHub website.
 
 <details>
@@ -30,15 +30,15 @@ A profile README is a special repository that is automatically displayed on your
 </details>
 
 
-### 2. GitHub Basics: Create a new repository
+## 2. GitHub Basics: Create a new repository
 Finally, we will create our first repository and update it via the command line. Please make sure to create a public repository (so the TAs can see it) and to add a README file.
 
-#### Creating a new repository
+### Creating a new repository
 
 1. Go to the GitHub website and click on the `+` in the top right corner and then `New repository`.
 2. Name the repository `ppchem` and select the `Public` option. Also check the box to `Initialize this repository with a README`.
 
-#### Create a `Personal Access Token` (PAT)
+### Create a `Personal Access Token` (PAT)
 
 Git will ask for your password when you clone a repository (next step). In order ot increase security, GitHub requires one to add a password that is different from your login password. For that, we can create a PAT like so:
 
@@ -58,7 +58,7 @@ Git will ask for your password when you clone a repository (next step). In order
 6. Generate token
 7. ⚠️ **IMPORTANT**: Copy and save your token somewhere safe! You'll need it when Git asks for your password. It will start with `ghp_` followed by a bunch of numbers and letters.
 
-#### Cloning the repository
+### Cloning the repository
 
 8. Open your terminal and **navigate (`cd`) to the directory where you want to store the repository** (replace `~/git` with that folder). This is often a folder called `git` in your home directory (`~`). You have to create the folder with e.g. `mkdir git` if it does not exist yet.
    ```bash
@@ -74,55 +74,62 @@ Git will ask for your password when you clone a repository (next step). In order
 
 In order to clone any repository, you need to have the URL of the repository. You can find the URL by clicking on the green `Code` button on the repository's page.
 
-#### Making changes and committing them
+### Making changes and committing them
 
-Whenever you make changes to your repository, you need to commit them to save the changes to the repository's history.
+Whenever you make changes to your repository, you need to commit them to save the changes to the repository's history. We will add an image to the repository and praktice the git workflow.
 
-11. Add an image from the internet of your favorite molecule to the repository directory on your computer. Your TAs recommend `Caffeine` :coffee:. You can do this by drag and drop on your file system or by using the `mv` command shown in the [command table](#summary-of-important-general-commands) after downloading an image.
-12. Type one of the following commands to stage the changes:
-```bash
-git add caffeine.png # stages only the added file - replace with the actual file name
-git add . # stages all changes if you adapted more files
-```
-13. Type the following command to commit the changes:
-```bash
-git commit -m "Some message" # Replace with a meaningful message
-```
+12. Download an image of your favorite molecule from the internet. Your TAs recommend `Caffeine` :coffee:.
+13. Add this image to your `repository` (the project folder). You can do this in one of these ways:
+    - drag and drop the image on your file system
+    - use the `mv` command shown in the [command table](#summary-of-important-general-commands). The `source` is the downloaded image and `destination` is your repository
+14. Check if the file is in the directory by typing `ls`
+15. Type **one of the following** commands to stage the changes:
+      ```bash
+      git add caffeine.png # stages only the added file - replace with the actual file name
+      git add . # stages all changes if you adapted more files
+      ```
+16. Check if the changes have been staged by typing `git status`.
+17. Type the following command to commit the changes:
+      ```bash
+      git commit -m "Some message" # Replace with a meaningful message
+      ```
+18. Use `git status` again to see if the changes are now committed.
 
-#### Pushing the changes to GitHub
+### Pushing the changes to GitHub
 
 For now, we only made changes to the local repository and committed them (prepared them for upload). We need to push the changes to GitHub to make them available to others.
 
-14. Type the following command to push the changes to GitHub:
-```bash
-git push origin main # Replace with the branch name if you are not on the main branch
-```
+19. Type the following command to push the changes to GitHub:
+      ```bash
+      git push origin main # Replace with the branch name if you are not on the main branch
+      ```
+20. Check in the browser (you might have to refresh the website) if your changes have been updated online.
 
 You can check the status of your repository at any time by typing `git status` in your terminal in the folder of the repository. This will also show you the changes you made and the files you staged as well as the branch you are currently on.
 
 
-#### Working with branches
+### Working with branches
 
-15. Type the following command to create a new branch and switch to it:
-```bash
-git checkout -b new-branch-name
-```
-16. Publish the branch to GitHub by typing:
-```bash
-git push -u origin new-branch-name
-```
+21. Type the following command to create a new branch and switch to it:
+      ```bash
+      git checkout -b new-branch-name
+      ```
+22. Publish the branch to GitHub by typing:
+      ```bash
+      git push -u origin new-branch-name
+      ```
 
 Changing branches locally will change the version that you have access to locally. So if you have a specific file only in the new branch you cannot find it in `main` and therefore also not push changes from there. If you simply want to switch branch, type:
-```bash
-git checkout <branch-name>
-```
+   ```bash
+   git checkout <branch-name> # replace <branch-name> with the actual name
+   ```
 
-#### Pulling changes from GitHub
+### Pulling changes from GitHub
 
 If you are working on a repository with others, you might want to pull the changes they made to your local repository. You can do this by typing `git pull` in your terminal in the folder of the repository.
 
 
-#### Summary of important commands
+## Summary of important commands
 
 | Command | Description |
 |---------|-------------|
