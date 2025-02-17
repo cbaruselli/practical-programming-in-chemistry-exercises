@@ -88,6 +88,12 @@ git config --global user.email "user@epfl.ch" # Replace with the associated emai
 git config --global --list
 ```
 
+### 3. Log into GitHub on VS Code
+
+1. Open VS Code
+2. Insall the required extension `GitHub Pull Requests and Issues`
+3. Sign in by clicking on the GitHub tab on the left (cat-like icon below the extensions tab)
+
 ## Terminal Commands Overview
 
 Here are the essential terminal commands you'll need for navigating your computer and working with files:
