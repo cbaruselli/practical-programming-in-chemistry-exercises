@@ -2,7 +2,12 @@
 
 ## GitHub
 
-GitHub is a web-based platform that allows you to store and manage your code. It is widely used by developers and data scientists to collaborate on projects and share their work with others. In this course, we will be using GitHub to store and share our code, both for the exercises as well as the milestones and final assignment.
+GitHub is a web-based platform that allows you to store and manage your code. It is widely used by developers and data scientists to collaborate on projects and share their work with others. In this course, we will be using GitHub to store and share our code, both for the exercises as well as the final assignment. Below, you can see how a local environment (laptop) interacts with the remote environment (GitHub browser) by first downloading (`clone`) a code-based project (`repository`) and then updating the remote version with changes done locally on your computer (arrows going up) or updating the local version with changes being done by colleagues (arrows going down).
+
+![Git Workflow](../assets/git_workflow.jpeg)
+*Scheme explaining the Git Workflow taken from [this blogpost](https://medium.com/@itsmepankaj/git-workflow-add-commit-push-pull-69adf44cf812), which has more detailed information on it.*
+
+This Git workflow ensures that changes are tracked, saved, and shared in a structured way, preventing data loss and enabling collaboration. Staging (`add`) selects changes, committing (`commit`) saves them with a message, and pushing (`push`) syncs them with a remote repository for others to access.
 
 Now, you will create your first repository, a profile README that will appear on your user page. 
 
@@ -21,6 +26,7 @@ A profile README is a special repository that is automatically displayed on your
 6. Above the right sidebar, click on `Edit README` and start editing the file.
 7. You can use the [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) to format your README.
 8. Once you are done, click on `Commit changes`.
+
 </details>
 
 
@@ -47,21 +53,24 @@ Git will ask for your password when you clone a repository (next step). In order
    - `workflow`
    - `write:packages`
    - `delete:packages`
+     
    ![PAT](../assets/PAT.png)
 6. Generate token
 7. ⚠️ **IMPORTANT**: Copy and save your token somewhere safe! You'll need it when Git asks for your password. It will start with `ghp_` followed by a bunch of numbers and letters.
 
 #### Cloning the repository
 
-8. Open your terminal and **navigate to the directory where you want to store the repository** (replace `~/git` with that folder). This is often a folder called `git` in your home directory (`~`). You have to create the folder with e.g. `mkdir git` if it does not exist yet.
-```bash
-cd ~/git
-```
+8. Open your terminal and **navigate (`cd`) to the directory where you want to store the repository** (replace `~/git` with that folder). This is often a folder called `git` in your home directory (`~`). You have to create the folder with e.g. `mkdir git` if it does not exist yet.
+   ```bash
+   cd ~/git
+   ```
 9. Type the following command to clone (download) the repository to your local machine (don't forget to replace `username` with your username):
-```bash
-git clone https://github.com/username/ppchem.git
-```
-10. Navigate into the repository by typing `cd ppchem`.
+   ```bash
+   git clone https://github.com/username/ppchem.git
+   ```
+10. When prompted type in your GitHub username and PAT for the password.
+    - :bulb: *Note*: You will not see any characters appearing in the password prompt when typing/copying your PAT. This is for security reasons. You can just `enter` when you are done typing.
+11. Navigate into the repository by typing `cd ppchem`.
 
 In order to clone any repository, you need to have the URL of the repository. You can find the URL by clicking on the green `Code` button on the repository's page.
 
