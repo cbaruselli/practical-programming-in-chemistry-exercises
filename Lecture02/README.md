@@ -29,6 +29,8 @@ A profile README is a special repository that is automatically displayed on your
 
 </details>
 
+You can take some inspiration from your TAs ([@jwa7](https://github.com/jwa7), [@sarina-kopf](https://github.com/Sarina-kopf) or [@rneeser](https://github.com/rneeser)) or get some tips for creative profiles from [this blogpost](https://dev.to/kshyun28/how-to-make-your-awesome-github-profile-hog).
+
 
 ## 2. GitHub Basics: Create a new repository
 Finally, we will create our first repository and update it via the command line. Please make sure to create a public repository (so the TAs can see it) and to add a README file.
