@@ -106,10 +106,11 @@ Here are the essential terminal commands you'll need for navigating your compute
 | Navigate to directory with spaces | `cd "directory Name"` |
 | Show current directory | `pwd` | 
 | List files in current directory | `ls` | 
-| Make a new directory | `mkdir directoryName` | 
+| Make a new directory in the current directory | `mkdir directoryName` | 
 | Remove a file | `rm fileName` | 
-| Copy a file | `cp source destination` | 
-| Move or rename a file | `mv source destination` | 
+| Remove a directory | `rm -r directoryName` |
+| Copy a file with path `source` to path `destination` | `cp source destination` | 
+| Move or rename a file with name `source` to new name `destination` | `mv source destination` | 
 
 ## Terminal Exercises
 
@@ -130,7 +131,7 @@ Here are the essential terminal commands you'll need for navigating your compute
 2. List the contents of `python-course` to verify the directories were created (using `ls`)
 3. Navigate into `exercises`
 4. Create a file called `week1.txt` (you can use `touch week1.txt` on Mac/Unix/Git Bash)
-5. Move back up to the `python-course` directory (using `cd`)
+5. Move back up to the `python-course` directory (using `cd ..`)
 6. Create another file called `todo.txt` in the `notes` directory
 7. Copy `todo.txt` from `notes` to `projects` (using `cp`)
 
