@@ -41,6 +41,7 @@ More about VS Code extensions from the [official documentation](https://code.vis
 2. Run the installer
    - ⚠️ Folder destination: Do **not** accept the default path (`C:\Users\<your-username>\Anaconda3\`) **if** your path contains spaces (e.g. `C:\Name Surname`) or characters outside the 7-bit ASCII character set like accents (e.g. `C:\Joëlle-Françoise L’Héritier`). Instead, **save it here**: `C:\anaconda`
    - ⚠️ When prompted, check "Add Anaconda to my PATH environment variable"
+      ![Add conda to PATH](../assets/windows_conda_path.png)
 4. Verify installation by opening git bash (might have to reopen for changes to take effect) and running:
    ```bash
    conda --version
