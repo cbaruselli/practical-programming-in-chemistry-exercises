@@ -7,8 +7,9 @@ This lecture focuses on setting up the essential tools you'll need throughout th
 ### 1. Terminal Setup
 - **Windows Users**: Install Git Bash
   1. Download Git Bash from the [official website](https://git-scm.com/download/win)
-  2. Run the installer, accepting default settings
-  3. Verify installation by opening Git Bash and typing `git --version`
+     ![Downloading git bash](/assets/git_bash_download.png)
+  3. Run the installer, accepting default settings
+  4. Verify installation by opening Git Bash and typing `git --version`
 
 - **macOS Users**: Use the built-in Terminal
   1. Press `Cmd + Space`, type "Terminal", and press Enter
@@ -17,22 +18,43 @@ This lecture focuses on setting up the essential tools you'll need throughout th
 
 ### 2. Visual Studio Code
 1. Download VS Code from the [official website](https://code.visualstudio.com/)
-2. Install the following extensions:
+2. Open VS Code and install the following extensions:
    - Python (by Microsoft)
    - Jupyter
+   ![Install Extensions in VS Code](/assets/vscode_extensions.png)
 
 More about VS Code extensions from the [official documentation](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
 ### 3. Anaconda Installation
-1. Download Anaconda from the [official website](https://www.anaconda.com/products/distribution)
-   - For macOS: [Check your processor type](https://support.apple.com/en-us/HT211814) (Intel or Apple Silicon)
-   - For Windows: Choose the appropriate installer (64-bit recommended)
+
+**macOS users**
+1. Download Anaconda from the [official website](https://www.anaconda.com/download/success))
+   - [Check your processor type](https://support.apple.com/en-us/HT211814) (Intel or Apple Silicon:  > `About This Mac` > Check `Chip` line) 
 2. Run the installer
-   - ⚠️ Windows Users: When prompted, check "Add Anaconda to my PATH environment variable"
-3. Verify installation by opening your terminal and running:
+3. Verify installation by opening your terminal (`Cmd + Space`, type "Terminal") and running:
    ```bash
    conda --version
    ```
+**Windows users**
+1. Download Anaconda from the [official website](https://www.anaconda.com/download/success))
+   - Choose the appropriate installer (64-bit recommended)
+2. Run the installer
+   - ⚠️ Folder destination: Do **not** accept the default path (`C:\Users\<your-username>\Anaconda3\`) **if** your path contains spaces (e.g. `C:\Name Surname`) or characters outside the 7-bit ASCII character set like accents (e.g. `C:\Joëlle-Françoise L’Héritier`). Instead, **save it here**: `C:\anaconda`
+   - ⚠️ When prompted, check "Add Anaconda to my PATH environment variable"
+4. Verify installation by opening git bash (might have to reopen for changes to take effect) and running:
+   ```bash
+   conda --version
+   ```
+
+<details>
+<summary>Some help for Windows installation</summary>
+  
+  These are mostly for the TAs to help you
+  
+- [Detailed Anaconda installation instructions](https://docs.anaconda.com/working-with-conda/reference/faq/#installing-anaconda)
+- [conda: command not found on Windows](https://stackoverflow.com/questions/54501167/anaconda-and-git-bash-in-windows-conda-command-not-found)
+      
+</details>
 
 ## GitHub Setup
 
