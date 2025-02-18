@@ -15,18 +15,19 @@ Navigate to the relevant week to access the exercises.
 
 | Lecture | Topic | Exercise Link |
 | --- | --- | --- |
-| 01 | Setup your environment | [Lecture01](lecture01) |
-| 02 | Jupyter notebooks and Python basics |  |
-| 03 | Advanced Python: file I/O, functions, error handling, and classes. |  |
-| 04 | Numerical operations, data handling, data visualization: `numpy`, `pandas`, `matplotlib` |  |
-| 05 | `RDKit` (part I): Reading/Writing, Descriptors, Fingerprints | |
-| 06 | `RDKit` (part II): Substructure matching, Conformer generation |  |
-| 07 | Making a Python package | |
-| 08 | Data Acquisition and Cleaning, Web APIs |  |
-| 09 | More packaging; project templates, code testing and coverage. |  |
-| 10 | Visualization and analysis of chemical data (clustering) |  |
-| 11 | Streamlit |  |
-| 12 |  |  |
+| 01 | Setup your environment | [Lecture01](Lecture01) |
+| 02 | GitHub and creating first repositories | [Lecture02](Lecture02) |
+| 03 | Conda, Jupyter notebooks, and Python basics | [Lecture03](Lecture03) |
+| 04 | Advanced Python: file I/O, functions, error handling, and classes. | [Lecture04](Lecture04) |
+| 05 | Numerical operations, data handling, data visualization: `numpy`, `pandas`, `matplotlib` |[Lecture05](Lecture05)  |
+| 06 | `RDKit` (part I): Reading/Writing, Descriptors, Fingerprints | [Lecture06](Lecture06) |
+| 07 | `RDKit` (part II): Substructure matching, Conformer generation | [Lecture07](Lecture07) |
+| 08 | Making a Python package | [Lecture08](Lecture08)|
+| 09 | Data Acquisition and Cleaning, Web APIs | [Lecture09](Lecture09) |
+| 10 | More packaging; project templates, code testing and coverage. | [Lecture10](Lecture10) |
+| 11 | Visualization and analysis of chemical data (clustering) |  [Lecture11](Lecture11)|
+| 12 | Streamlit |[Lecture12](Lecture12)  |
+| 13 |  |  |
 
 We are currently updating last year's course. So, there might be upcoming changes in the schedule.
 
