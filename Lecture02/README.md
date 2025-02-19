@@ -50,7 +50,7 @@ Finally, we will create our first repository and update it via the command line.
 
 ### Create a `Personal Access Token` (PAT)
 
-Git will ask for your password when you clone a repository (next step). In order ot increase security, GitHub requires one to add a password that is different from your login password. For that, we can create a PAT like so:
+Git will ask for your password when you clone a repository (next step). In order to increase security, GitHub requires one to add a password that is different from your login password. For that, we can create a PAT like so:
 
 ⚠️ This is crucial for connecting to GitHub from your computer!
 
