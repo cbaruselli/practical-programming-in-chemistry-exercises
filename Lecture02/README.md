@@ -96,7 +96,6 @@ Whenever you make changes to your repository, you need to commit them to save th
 15. Type **one of the following** commands to stage the changes:
       ```bash
       git add caffeine.png # stages only the added file - replace with the actual file name
-      git add . # stages all changes if you adapted more files
       ```
 16. Check if the changes have been staged by typing `git status`.
 17. Type the following command to commit the changes:
