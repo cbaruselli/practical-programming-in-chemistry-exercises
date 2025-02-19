@@ -12,6 +12,14 @@ This Git workflow ensures that changes are tracked, saved, and shared in a struc
 
 Now, you will create your first repository, a profile README that will appear on your user page. 
 
+<details>
+<summary>What is the difference between Git and GitHub?</summary>
+
+Git is a distributed version control system that allows developers to track changes, manage branches, and collaborate on code efficiently, while GitHub is a cloud-based platform that provides hosting for Git repositories along with additional collaboration features like issue tracking, pull requests, and web-based interfaces to facilitate teamwork and open-source contributions.
+
+In this course, we will use `Git` commands for version control, but will be using GitHub as the remote storage for our repositories.
+</details>
+
 ## 1. Create a Profile README
 A profile README is a special repository that is automatically displayed on your GitHub profile. It is a great way to introduce yourself and showcase your work. Take your time to create such a README on the GitHub website.
 
