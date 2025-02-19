@@ -66,7 +66,7 @@ Git will ask for your password when you clone a repository (next step). In order
      
    ![PAT](../assets/PAT.png)
 6. Generate token
-7. ⚠️ **IMPORTANT**: Copy and save your token somewhere safe! You'll need it when Git asks for your password. It will start with `ghp_` followed by a bunch of numbers and letters.
+7. ⚠️ **IMPORTANT**: Copy and save your token somewhere safe! You'll need it when Git asks for your password. It will start with `ghp_` followed by a bunch of numbers and letters. **After it is generated and shown once, it will not be accessible again via the GitHub website. Store it safely!**
 
 ### Cloning the repository
 
