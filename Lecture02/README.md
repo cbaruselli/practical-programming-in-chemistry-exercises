@@ -137,6 +137,9 @@ Changing branches locally will change the version that you have access to locall
 
 If you are working on a repository with others, you might want to pull the changes they made to your local repository. You can do this by typing `git pull` in your terminal in the folder of the repository.
 
+If working collaboratively on a project, where each project member is working on local copies of the same remote repository, and especially if working on the same file, extra care need to be taken when pushing and pulling changes to the remote repository.
+
+In these cases, best practice is often to work in a branch of the repo that is yours alone, and merge changes with other periodically. This will be covered later in the course.
 
 ## Summary of important commands
 
