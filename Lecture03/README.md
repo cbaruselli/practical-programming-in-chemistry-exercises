@@ -1,6 +1,6 @@
 # Python Basics Tutorial Notebook
 
-This notebook provides a comprehensive introduction to fundamental Python programming concepts, focusing on data types, control structures, and file path handling. It's designed for beginners learning Python in a scientific context, with examples using chemical elements and laboratory scenarios.
+This notebook provides an introduction to fundamental Python programming concepts, focusing on data types, control structures, and file path handling.
 
 ## Contents
 
@@ -24,11 +24,6 @@ This notebook provides a comprehensive introduction to fundamental Python progra
    - Cross-platform path management
    - Directory and file operations
    - Path manipulation exercises
-
-## Prerequisites
-- Basic understanding of Python syntax
-- Python 3.x installed
-- Familiarity with command line interface
 
 ## Exercises
 
