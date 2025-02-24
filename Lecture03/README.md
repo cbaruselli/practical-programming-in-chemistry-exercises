@@ -71,6 +71,8 @@ Open your python-course folder on VSCode and open a terminal in this directory.
 
 <img width="570" alt="Screenshot 2025-02-24 at 16 56 51" src="https://github.com/user-attachments/assets/f8e33518-a9b2-4f55-ae07-ee135b16c41f" />
 
+Then double click on the exercises notebook to open it.
+
 # Python Basics Tutorial Notebook
 
 This notebook provides an introduction to fundamental Python programming concepts, focusing on data types, control structures, and file path handling.
