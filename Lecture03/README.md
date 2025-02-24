@@ -62,6 +62,14 @@ git push origin main
 
 ## Jupyter notebooks in VS Code
 
+A Jupyter notebook is a Python interface useful for testing and debuging small segments of code. Instead of running at at once, it enables you to set break points and run individual lines of code one at at time,
+First install the Jupyter extension in VSCode
+
+<img width="764" alt="Screenshot 2025-02-24 at 16 03 43" src="https://github.com/user-attachments/assets/2b111201-8a3a-4ec5-956d-a6a2cd4bd948" />
+
+Open your python-course folder on VSCode and open a terminal in this directory.
+
+<img width="570" alt="Screenshot 2025-02-24 at 16 56 51" src="https://github.com/user-attachments/assets/f8e33518-a9b2-4f55-ae07-ee135b16c41f" />
 
 # Python Basics Tutorial Notebook
 
