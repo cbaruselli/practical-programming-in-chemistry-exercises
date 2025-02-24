@@ -71,7 +71,15 @@ Open your python-course folder on VSCode and open a terminal in this directory.
 
 <img width="570" alt="Screenshot 2025-02-24 at 16 56 51" src="https://github.com/user-attachments/assets/f8e33518-a9b2-4f55-ae07-ee135b16c41f" />
 
-Then double click on the exercises notebook to open it.
+Clone the code using the following command:
+```bash
+git clone https://github.com/schwallergroup/practical-programming-in-chemistry-exercises.git
+```
+
+Then double click on the Lecture 3 exercise notebook to open it. Selected a kernel by clicking
+Select Kernel -> Python Environments -> ppchem
+
+Then install IPython when prompted.
 
 # Python Basics Tutorial Notebook
 
