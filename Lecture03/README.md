@@ -79,7 +79,7 @@ git clone https://github.com/schwallergroup/practical-programming-in-chemistry-e
 Then double click on the Lecture 3 exercise notebook to open it. Selected a kernel by clicking
 Select Kernel -> Python Environments -> ppchem
 
-Then install IPython when prompted.
+Then install IPython when prompted. 
 
 # Python Basics Tutorial Notebook
 
