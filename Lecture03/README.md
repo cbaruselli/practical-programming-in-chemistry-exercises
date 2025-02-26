@@ -37,7 +37,7 @@ Once you have installed all necessary packages, you should export the environmen
 <details>
 <summary>Solution: Commands</summary>
 
-Don't forget to reaplce `path/to/ppchem` with your path!
+Don't forget to repalce `path/to/ppchem` with your path!
 
 ```bash
 cd <path/to/ppchem>
