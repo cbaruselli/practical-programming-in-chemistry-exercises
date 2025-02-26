@@ -56,7 +56,7 @@ git push origin main
 | Command | Description |
 |---------|-------------|
 | `conda env list` | List all environments on your computer with their respective paths.|
-| `conda activate env-name` | ctivate an environment. |
+| `conda activate env-name` | activate an environment. |
 | `conda list` | List all packages installed in the activated environment. |
 | `conda env remove -n env-name` | Remove an environment from your computer. |
 
