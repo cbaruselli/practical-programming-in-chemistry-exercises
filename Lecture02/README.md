@@ -93,9 +93,9 @@ Whenever you make changes to your repository, you need to commit them to save th
     - drag and drop the image on your file system (this can be done in a VSCode project with the relevant directories open)
     - use the `mv` command shown in the [command table](#summary-of-important-general-commands). The `source` is the downloaded image and `destination` is your repository
 14. Check if the file is in the directory by typing `ls`
-15. Type **one of the following** commands to stage the changes:
+15. Type the following command to stage the changes and **replace `<caffeine.png>` with your filename**:
       ```bash
-      git add caffeine.png # stages only the added file - replace with the actual file name
+      git add <caffeine.png> # stages only the added file - replace with the actual file name
       ```
 16. Check if the changes have been staged by typing `git status`.
 17. Type the following command to commit the changes:
