@@ -78,13 +78,13 @@ git clone https://github.com/schwallergroup/practical-programming-in-chemistry-e
 
 Then double click on the Lecture 3 exercise notebook to open it. Selected a kernel by clicking
 Select Kernel -> Python Environments -> ppchem
-![Git Workflow](../assets/kernel_select.jpeg)
+![Git Workflow](../assets/kernel_select.png)
 
-![Git Workflow](../assets/kernel_env.jpeg)
+![Git Workflow](../assets/kernel_env.png)
 
-![Git Workflow](../assets/python_env.jpeg)
+![Git Workflow](../assets/python_env.png)
 Then install IPython if prompted. 
-![Git Workflow](../assets/ipython.jpeg)
+![Git Workflow](../assets/ipython.png)
 # Python Basics Tutorial Notebook
 
 This notebook provides an introduction to fundamental Python programming concepts, focusing on data types, control structures, and file path handling.
