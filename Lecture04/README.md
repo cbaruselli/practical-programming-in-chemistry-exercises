@@ -7,14 +7,17 @@ This lecture focuses on developing some more advanced skills in Python. In this 
 1. perform **error handling** to build more robust code and deal with errors more descriptively,
 1. and finally **build classes** as a way to demonstrate object-oriented programming,
 
-of course all with some chemical themes!
+and as always, with some chemical themes!
 
 
 ## Setup
 
-There are no particular package dependencies required for this weeks exercises. However you still need to pull the repo updates from GitHub as you have done before. Open the exercise in a VSCode window, and open the jupyter notebooks directly in VSCode. 
+There are no particular package dependencies required for this weeks exercises. However you still need to pull the repo updates from GitHub as you have done before. 
 
-Make sure you have completed the setup associated with Exercise 3 to be able to do this.
+**Important**: ensure you have saved your previous weeks exercises in a folder **different from your local copy of the practical programming repository**. You only need to do this if you made changes to (for example) exercise 3 from within the repository. In this case, copy the notebook into a different folder and double check that it is backed up. Then revert the changes inside the repository, and pull this weeks exercises.
+
+
+Copy Exercise 4 to a different folder before starting to work on them, opening the jupyter notebooks directly in VSCode.
 
 ## Warm-up
 
