@@ -14,22 +14,7 @@ of course all with some chemical themes!
 
 There are no particular package dependencies required for this weeks exercises. However you still need to pull the repo updates from GitHub as you have done before. Open the exercise in a VSCode window, and open the jupyter notebooks directly in VSCode. 
 
-You may have to install the IPython kernel when prompted, making sure you have selected the kernel in VSCode as follows.
-
-First, open the exercises (or warm-up) notebook and click "Select Kernel" in the top right of the window:
-
-
-![VSCode Select Kernel](../assets/vscode_select_kernel.png)
-
-Choose "Python Environments", and then select the appropriate environment. For me (your TA Joe) and for this given project (notice how I have many environments for different projects!), I want to select the "ppchem" conda environment:
-
-![VSCode Python Env](../assets/vscode_python_env.png)
-
-![VSCode Select Env 2](../assets/vscode_select_env.png)
-
-Then when prompted install `ipython` (meaning interactive python) in this environment to allow you to run jupyter notebooks from VSCode:
-
-![VSCode Install IPython](../assets/vscode_install_ipython.png)
+Make sure you have completed the setup associated with Exercise 3 to be able to do this.
 
 ## Warm-up
 
