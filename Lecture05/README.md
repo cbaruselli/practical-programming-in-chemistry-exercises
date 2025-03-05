@@ -146,10 +146,4 @@ Navigate back to your main repository landing page, i.e.
 
 ![Pull Request 8](../assets/Lecture05/8.png)
 
-Finally, update the "Open a pull request" row of your Personal Milestones table with the
-URL of the pull request.
-
-For example, the URL of my (Joe's) PR was:
-[https://github.com/jwa7/ppchem/pull/3](https://github.com/jwa7/ppchem/pull/3)
-
 Good job! Now onto the exercises...
