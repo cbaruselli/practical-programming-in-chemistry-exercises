@@ -1,4 +1,4 @@
-# Week 9 - Copier project templates
+# Lecture 10 - Copier project templates
 
 This week we will look at using a project template, Copier, to turn the CDK-Depict code you wrote last week into a simple Python package.
 
