@@ -1,6 +1,6 @@
 # Lecture 10 - Copier project templates
 
-This week we will look at using a project template, Copier, to turn the CDK-Depict code you wrote last week into a simple Python package.
+This lecture we will look at using a project template, Copier, to turn the CDK-Depict code you wrote last week into a simple Python package.
 
 **What is Copier?**
    - Copier is a utility tool created to facilitate the duplication and customization of project templates. It is written in Python and enables you to efficiently generate projects by copying a template and making specified alterations defined in an easy configuration file (often YAML).
@@ -16,27 +16,20 @@ conda activate ppchem
 
 #### Step 2: Organise the code
 
-Go through the Jupyter notebook from last week and ensure that your code is neatly organised into functions. Once this is done move the code into a new nodebook which should contain only the code required to query the CDK-Depict website. 
+Go through the Jupyter notebook from yesterday and ensure that your code is neatly organised into functions. Once this is done move the code into a new notebook which should contain only the code required to query the CDK-Depict website. 
 Place this notebook in a new folder called 'CDK-Package'.
 
 Remember you can use the following commands to create folders and move files between directories. For the *mv* command to work you must navigate your terminal to the directory in which the file you want to move is located. In your case it should be something like '/path/to/your/practical-programming-in-chemistry-exercises/week_08/your_new_notebook.ipynb'
 
 ```bash
 mkdir CDK-Package
-cd /path/to/your/practical-programming-in-chemistry-exercises/week_08/your_new_notebook.ipynb
-mv your_new_notebook.ipynb /path/to/your/CDK-Package
+cd CDK-Package
+mv /path/to/your/practical-programming-in-chemistry-exercises/week_08/your_new_notebook.ipynb .
 ```
 
 #### Step 3: Convert Your Notebook
 
-While Jupyter notebooks are excellent tools for quickly developing small snippets of code, they are not suited for use in a Python package. To make your code compatible with a Python package we
-Export your Jupyter Notebook (`YourNotebook.ipynb`) to a standard Python script (`module.py`). You can do this directly from the Jupyter interface or use `nbconvert`:
-
-```bash
-jupyter nbconvert --to script your_new_notebook.ipynb
-```
-
-This creates `your_new_notebook.txt`. You will need to rename the file extension to ``.py`` Rename and organize this file into a meaningful module name.
+While Jupyter notebooks are excellent tools for quickly developing small snippets of code, they are not suited for use in a Python package. To make your code compatible with a Python package we need to copy the functions into a Python module, as you did in exercise 8. Create a module called `cdktest.py`.
 
 #### Step 4: Using Copier to Create the Package Structure**
 
@@ -66,7 +59,7 @@ Instead of manually creating directories and files as outlined previously, you c
    Open the `__init__.py` file. Add a line of the following format to import the functions from the code we generated from your notebook
 
    ```python
-   from .your_file_name import smiles_depict_url, display_svg
+   from .cdktest import smiles_depict_url, display_svg
    ```
 
    Remember to use the names you gave to your functions
@@ -111,43 +104,7 @@ Next, you need to create a remote repository where your code will be stored onli
 - Go back to your repository on GitHub and refresh the page. You should now see all the files you've added locally.
 
 #### Step 7: Install Your Local Package
-Now we have the code in our package prepared, we must set it up as installable so yourself and others could access it through a simple **pip install cdkpackage**.
-
-Do do this we need to create a setup.py file. This tells python that we are in a package and what dependancies must be installed. Fill in the code below and create a setup.py file in the directory you created the package. I created an example using my details, but fill in your own.
-
-```python
-from setuptools import setup, find_packages
-
-setup(
-    name="cdkpackage",
-    version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="A small utility to fetch and display SMILES structures as SVG using an external API.",
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    url="http://github.com/yourusername/smiles_visualizer",
-    packages=find_packages(),
-    install_requires=[
-        "requests",
-        "IPython",
-    ],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3.6',
-)
-```
-
-
-To use your package within the `ppchem` environment, navigate to the project root where `setup.py` is located, and run:
-
-```bash
-python setup.py sdist bdist_wheel
-pip install -e .
-```
+Now we have the code in our package prepared, we must set it up as installable so yourself and others could access it through a simple **pip install -e .**. This uses the `pyproject.toml` file created by copier.
 
 This installs the package in editable mode (symlink) so changes are reflected immediately.
 
