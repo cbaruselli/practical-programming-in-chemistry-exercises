@@ -1,4 +1,4 @@
-# Week 9
+# Lecture 10
 
-Welcome to week 9! This week is divide into 2 parts, the details of which are in the
+Welcome to lecture 10! This week is divided into 2 parts, the details of which are in the
 corresponding READMEs.
