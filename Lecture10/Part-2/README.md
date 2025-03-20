@@ -1,6 +1,6 @@
 ## Setup
 
-Go to https://github.com/schwallergroup/Rxn-INSIGHT and read the README.
+Go to https://github.com/mrodobbe/Rxn-INSIGHT and read the README.
 
 Follow the installation instructions, making sure to install the optional dependencies
 as these will be required to run the tests and style checks.
