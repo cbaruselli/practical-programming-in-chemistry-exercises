@@ -96,7 +96,7 @@ Next, you need to create a remote repository where your code will be stored onli
 4. **Push Your Local Repository to GitHub**
    - Now, push the changes from your local repository to GitHub with:
      ```bash
-     git push -u origin master
+     git push -u origin main  # or git push -u origin master
      ```
    - The `-u` flag is used to set the upstream (tracking reference) for your local branch.
 
