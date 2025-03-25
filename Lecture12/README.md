@@ -9,6 +9,7 @@ pip install stmol
 pip install py3Dmol
 pip install mols2grid
 pip install scipy
+pip install plotly
 ```
 
 **Happy coding** :star_struck:
