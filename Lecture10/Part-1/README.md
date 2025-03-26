@@ -96,7 +96,7 @@ Next, you need to create a remote repository where your code will be stored onli
 4. **Push Your Local Repository to GitHub**
    - Now, push the changes from your local repository to GitHub with:
      ```bash
-     git push -u origin master
+     git push -u origin main  # or git push -u origin master
      ```
    - The `-u` flag is used to set the upstream (tracking reference) for your local branch.
 
@@ -104,7 +104,11 @@ Next, you need to create a remote repository where your code will be stored onli
 - Go back to your repository on GitHub and refresh the page. You should now see all the files you've added locally.
 
 #### Step 7: Install Your Local Package
-Now we have the code in our package prepared, we must set it up as installable so yourself and others could access it through a simple **pip install -e .**. This uses the `pyproject.toml` file created by copier.
+Now we have the code in our package prepared, we must set it up as installable so yourself and others could access it through:
+```bash
+pip install -e .
+```
+This uses the `pyproject.toml` file created by copier.
 
 This installs the package in editable mode (symlink) so changes are reflected immediately.
 

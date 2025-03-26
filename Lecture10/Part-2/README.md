@@ -1,6 +1,9 @@
 ## Setup
 
-Go to https://github.com/schwallergroup/Rxn-INSIGHT and read the README.
+Go to https://github.com/mrodobbe/Rxn-INSIGHT and read the README. Follow the instructions to install **from source** (i.e. Option 2) in developer mode. This means that **after** cloning the repository (and entering the directory), you'll want to install with:
+```bash
+pip install -e ".[test,doc]"
+```
 
 Follow the installation instructions, making sure to install the optional dependencies
 as these will be required to run the tests and style checks.
