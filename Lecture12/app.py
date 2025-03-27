@@ -13,6 +13,7 @@ import numpy as np
 import mols2grid
 import streamlit.components.v1 as components
 import plotly.figure_factory as ff
+from typing import Tuple, List
 
 # Put functions here 
 def generate_3D(smiles):
@@ -30,7 +31,7 @@ def visualize_3D(molstring):
     xyzview.setBackgroundColor('white')
     showmol(xyzview, height = w,width=w)
 
-def calculate_descriptors(smiles):
+def calculate_descriptors(smiles: str) -> Tuple[float, int, int, float]:
     "Calculate Lipinski descriptors: molecular weight, H-bond donors, H-bond acceptors, and LogP"
     pass # your code here!!
     return mw, hbd, hba, logp
@@ -40,11 +41,11 @@ def download_data():
     pass # your code here!!
     return df
 
-def modify_data(df):
+def modify_data(df: pd.Dataframe) -> Tuple[pd.Dataframe, List[str]]:
     "Modify the ChEMBL database to include Lipinski descriptors. Also get the Morgan fingerprints of each molecule."
     return df, fingerprints
 
-def find_most_similar(fingerprints, ketcher_smiles, slider_val = 4):
+def find_most_similar(fingerprints: List[str], ketcher_smiles: str, slider_val: int = 4) -> pd.DataFrame:
     "Find the most similar molecules to the one drawn in Ketcher."
     pass # your code here!!
     return df

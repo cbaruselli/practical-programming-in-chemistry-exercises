@@ -14,6 +14,7 @@ import mols2grid
 import streamlit.components.v1 as components
 import plotly.express as px
 import plotly.figure_factory as ff
+from typing import Tuple, List
 
 # Load data
 @st.cache_data()
@@ -25,7 +26,7 @@ def download_data():
     return df
 
 @st.cache_data()
-def modify_data(df):
+def modify_data(df: pd.Dataframe) -> Tuple[pd.Dataframe, List[str]]:
     "Modify the ChEMBL database to include Lipinski descriptors. Also get the Morgan fingerprints of each molecule."
     df = df.dropna(subset=['Smiles'])
     df['MW'], df['HBD'], df['HBA'], df['LogP'] = zip(*df['Smiles'].apply(calculate_descriptors))
@@ -34,7 +35,7 @@ def modify_data(df):
     fingerprints = df["Smiles"].apply(lambda x: mfp.GetFingerprint(Chem.MolFromSmiles(x)))
     return df, fingerprints
 
-def calculate_descriptors(smiles):
+def calculate_descriptors(smiles: str) -> Tuple[float, int, int, float]:
     "Calculate Lipinski descriptors: molecular weight, H-bond donors, H-bond acceptors, and LogP"
     mol = Chem.MolFromSmiles(smiles)
     if mol is None:
@@ -57,7 +58,7 @@ def generate_3D(smiles):
     molstring= Chem.MolToMolBlock(mol)
     return molstring
 
-def find_most_similar(fingerprints, ketcher_smiles, slider_val = 4):
+def find_most_similar(fingerprints: List[str], ketcher_smiles: str, slider_val: int = 4) -> pd.DataFrame:
     mfp = rdFingerprintGenerator.GetMorganGenerator(radius = 2, fpSize = 2048)
     mol = Chem.MolFromSmiles(ketcher_smiles)
     if mol is None:
