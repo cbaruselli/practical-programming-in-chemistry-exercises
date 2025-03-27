@@ -108,5 +108,5 @@ if mw == None:
 else: 
     # Finish the followng
     st.subheader("Molecular weight")
-    fig = ff.create_distplot() # your code here!!
+    fig =  # your code here!!
     st.plotly_chart(fig, use_container_width=True)

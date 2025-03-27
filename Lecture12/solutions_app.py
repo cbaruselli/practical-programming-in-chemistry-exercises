@@ -12,8 +12,8 @@ from rdkit.Chem import rdFingerprintGenerator
 import numpy as np
 import mols2grid
 import streamlit.components.v1 as components
+import plotly.express as px
 import plotly.figure_factory as ff
-
 
 # Load data
 @st.cache_data()
@@ -144,7 +144,7 @@ with col2:
             st.error("Does not pass Lipinski's Rule of Five", icon="🚨")
 
         # Lipinski's Rule of Five explanation
-        st.markdown("Lipinski's rule of five is a rule of thumb to evaluate the druglikeness of a molecule.")
+        st.markdown("Lipinski's rule of five is a rule of thumb to evaluate the oral availability of a molecule.")
         st.markdown("Lipinski's Rules:  \n1. \# H-Bond donors < 5 \n 2. \# H-bond acceptors < 10\n 3. MW < 500 daltons \n4. LogP < 5.") 
         st.markdown("As with any rule, there are many exceptions")
 
