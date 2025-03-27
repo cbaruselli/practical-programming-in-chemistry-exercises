@@ -41,7 +41,7 @@ def download_data():
     pass # your code here!!
     return df
 
-def modify_data(df: pd.Dataframe) -> Tuple[pd.Dataframe, List[str]]:
+def modify_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, List[str]]:
     "Modify the ChEMBL database to include Lipinski descriptors. Also get the Morgan fingerprints of each molecule."
     return df, fingerprints
 

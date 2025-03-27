@@ -26,7 +26,7 @@ def download_data():
     return df
 
 @st.cache_data()
-def modify_data(df: pd.Dataframe) -> Tuple[pd.Dataframe, List[str]]:
+def modify_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, List[str]]:
     "Modify the ChEMBL database to include Lipinski descriptors. Also get the Morgan fingerprints of each molecule."
     df = df.dropna(subset=['Smiles'])
     df['MW'], df['HBD'], df['HBA'], df['LogP'] = zip(*df['Smiles'].apply(calculate_descriptors))
@@ -161,7 +161,7 @@ if most_similar_df is not None:
     else:
         height = 300
 
-    # use mols2grid to display our dataframe with molecules
+    # use mols2grid to display our DataFrame with molecules
     raw_html = mols2grid.display(most_similar_df, subset = ["Name", "similarity"],
                                 smiles_col = "Smiles")._repr_html_()
     components.html(raw_html, height = height)
